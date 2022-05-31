@@ -12,6 +12,7 @@ services:
       - ./grafana:/var/lib/grafana
     ports:
       - "3000:3000"
+      user: "0"
     container_name: grafana
   vector:
     image: timberio/vector:0.X-alpine
